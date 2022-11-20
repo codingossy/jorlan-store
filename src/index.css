@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+@tailwind base;
+@layer base {
+  body {
+    @apply  font-primary text-base leading-relaxed;
+  }
+  section {
+    @apply py-[30px] lg:py-[30px];
+  }
+  .btn-primary{
+    @apply px-5 py-2 text-white bg-blue-400 rounded-md hover:bg-blue-700
+  }
+  .btn-secondary{
+    @apply px-5 py-2 text-white bg-yellow-500 rounded-md hover:bg-yellow-200
+  }
+  .btn-red{
+    @apply px-5 py-2 text-white bg-red-600 rounded-md hover:bg-red-400
+  }
+  .btn-square{
+    @apply px-5 py-2 text-white bg-green-600 rounded-md transition duration-200 ease-in-out
+  }
+  .btn-normal{
+    @apply px-5 py-2 text-white bg-black rounded-md
+  }
+  input{
+    @apply border-none outline-none cursor-pointer resize-none 
+  }
+  button{
+    @apply border-none outline-none cursor-pointer bg-transparent
+  }
+}
+
+
+@tailwind components;
+@tailwind utilities;
+
+
+*::after,
+*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body{
+  
+
+  font-family:  'Poppins', sans-serif;
+  color: #000;
+}
