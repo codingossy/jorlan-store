@@ -109,13 +109,13 @@ const CartPage = () => {
                     ))}
                   </div>
 
-                  <div className="w-full flex-1 border border-red-400 p-4 lg:w-64">
+                  <div className="w-full h-full flex-1 border border-red-400 p-4 lg:w-64">
                     <div className="p-2">
                       <h1 className="text-center text-xl font-semibold uppercase">
                         receipt
                       </h1>
                     </div>
-                    <div className="flex flex-col gap-y-5 border border-green-500 p-2 capitalize">
+                    <div className="flex flex-col gap-y-5 border border-green-500 p-4 capitalize">
                       <span className="flex justify-between">
                         <p>items total: </p>
                         <p>{totalItems}</p>
@@ -130,7 +130,7 @@ const CartPage = () => {
                       </span>
                     </div>
 
-                    <div className="border border-blue-400 p-2 py-6">
+                    <div className="border border-blue-400 p-4 py-6">
                       <div className="flex justify-between font-semibold capitalize">
                         <h1>total: </h1>
                         <span>${totalAmount - discount + deliveryCharge}</span>

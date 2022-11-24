@@ -59,7 +59,7 @@ const SingleProduct = () => {
     const newProduct = { ...product, newQty: quantity, totalPrice };
     dispatch(setIsModalShowing(false));
     dispatch(AddToCart(newProduct))
-    navigate("/");
+    // navigate("/");
   };
 
   return (

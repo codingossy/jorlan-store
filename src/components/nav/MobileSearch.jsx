@@ -27,7 +27,7 @@ const Home = () => {
                 key={category.id}
                 className="rounded-md bg-gray-500 px-2 py-1 text-center text-xs lg:text-sm text-white hover:bg-gray-700 hover:text-white"
               >
-                <Link to={`/category/${category.id}`}>{category.name}</Link>
+                <Link to={`category/${category.id}`}>{category.name}</Link>
               </li>
             ))}
           </ul>
