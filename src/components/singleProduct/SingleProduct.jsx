@@ -81,7 +81,7 @@ const SingleProduct = () => {
 
             <div className="p-4">
               <div className="">
-                <h3 className="mb-4 text-2xl font-semibold text-white lg:text-3xl">
+                <h3 className="mb-4 text-2xl font-semibold text-white text-2xl lg:text-3xl">
                   {product.title}
                 </h3>
                 <p className="max-w-[500px] text-sm">{product.description}</p>
