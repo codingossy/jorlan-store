@@ -11,10 +11,10 @@
     @apply py-[30px] lg:py-[30px];
   }
   .btn-primary{
-    @apply px-5 py-2 text-white bg-blue-400 rounded-md hover:bg-blue-700
+    @apply px-5 py-2 text-white bg-blue-500 rounded-md hover:bg-blue-700 capitalize
   }
   .btn-secondary{
-    @apply px-5 py-2 text-white bg-yellow-500 rounded-md hover:bg-yellow-200
+    @apply px-5 py-2 text-white bg-yellow-500 rounded-md hover:bg-yellow-200 capitalize
   }
   .btn-red{
     @apply px-5 py-2 text-white bg-red-600 rounded-md hover:bg-red-400
@@ -30,6 +30,12 @@
   }
   button{
     @apply border-none outline-none cursor-pointer bg-transparent
+  }
+  .footerList{
+    @apply p-0
+  }
+  .footerListItem{
+    @apply mb-2 text-gray-500 capitalize hover:text-red-400 cursor-pointer
   }
 }
 
@@ -47,8 +53,7 @@
 }
 
 body{
-  
-
   font-family:  'Poppins', sans-serif;
   color: #000;
+  overflow-x: hidden;
 }

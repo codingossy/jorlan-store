@@ -1,9 +1,24 @@
-import React from 'react'
+import React from "react";
+import { useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { useParams, Link } from "react-router-dom";
+import { getProductsByCategory } from "../../store/categorySlice";
 
 const CategoryPage = () => {
-  return (
-    <div>CategoryPage</div>
-  )
-}
+  const dispatch = useDispatch();
+  const { id } = useParams();
+  const {
+    categoryProductSingle: products,
+    categoryProductSingleStatus: status,
+  } = useSelector((state) => state.category);
 
-export default CategoryPage
+  useEffect(() => {
+    dispatch(getProductsByCategory(id, 'single'))
+  }, [id])
+
+  return <section className="py-10">
+
+  </section>;
+};
+
+export default CategoryPage;
